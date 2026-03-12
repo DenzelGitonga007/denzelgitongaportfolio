@@ -32,18 +32,18 @@ const Hero = () => {
       
       if (isDeleting) {
         setDisplayText(currentFullText.substring(0, displayText.length - 1));
-        setSpeed(50);
+        setSpeed(30);
       } else {
         setDisplayText(currentFullText.substring(0, displayText.length + 1));
-        setSpeed(150);
+        setSpeed(80);
       }
 
       if (!isDeleting && displayText === currentFullText) {
-        setTimeout(() => setIsDeleting(true), 2000);
+        setTimeout(() => setIsDeleting(true), 1500);
       } else if (isDeleting && displayText === "") {
         setIsDeleting(false);
         setIndex(index + 1);
-        setSpeed(500);
+        setSpeed(300);
       }
     };
 
