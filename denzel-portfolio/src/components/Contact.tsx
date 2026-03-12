@@ -9,7 +9,8 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding bg-secondary/10 relative overflow-hidden">
       {/* Background Decorative */}
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-primary/5 rounded-full blur-[120px] -z-10 animate-pulse"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-primary/10 rounded-full blur-[120px] -z-10 animate-pulse"></div>
+      <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-primary/5 rounded-full blur-[100px] -z-10"></div>
       
       <div className="container-custom">
         <SectionHeader

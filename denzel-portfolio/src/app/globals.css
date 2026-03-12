@@ -12,7 +12,9 @@
   --card-bg: #ffffff;
   --border-color: #e2e8f0;
   --muted: #1e293b;
-  --muted-foreground: #334155;
+  --muted-foreground: #475569;
+  --glass: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.4);
 }
 
 @theme inline {
@@ -46,7 +48,37 @@
     background-color: var(--background);
     color: var(--foreground);
     @apply antialiased transition-colors duration-500 font-semibold text-slate-900;
+    position: relative;
   }
+
+  /* Premium Grain Overlay */
+  body::after {
+    content: "";
+    position: fixed;
+    top: -150%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 9999;
+    animation: grain 8s steps(10) infinite;
+    mix-blend-mode: overlay;
+  }
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -5%) }
+  20% { transform:translate(-10%, 5%) }
+  30% { transform:translate(5%, -10%) }
+  40% { transform:translate(-5%, 15%) }
+  50% { transform:translate(-10%, 5%) }
+  60% { transform:translate(15%, 0) }
+  70% { transform:translate(0, 10%) }
+  80% { transform:translate(-15%, 0) }
+  90% { transform:translate(10%, 5%) }
 }
 
 @layer components {
@@ -71,7 +103,7 @@
   }
 
   .premium-card {
-    @apply bg-white rounded-[2.5rem] border border-border shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)] transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(6,92,194,0.15)] hover:-translate-y-1;
+    @apply bg-white/80 backdrop-blur-xl rounded-[2.5rem] border border-white shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)] transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(6,92,194,0.15)] hover:-translate-y-1;
   }
 }
 

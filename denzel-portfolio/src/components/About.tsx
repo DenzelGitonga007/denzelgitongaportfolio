@@ -62,7 +62,7 @@ const About = () => {
           >
             <div className="rounded-[4rem] overflow-hidden shadow-2xl border-[20px] border-secondary/30 group">
               <Image
-                src="/assets/img/profile/Denzel_Coding.png"
+                src="/assets/img/profile/Denzel_Coding_New.png"
                 alt="Denzel Coding"
                 width={700}
                 height={700}

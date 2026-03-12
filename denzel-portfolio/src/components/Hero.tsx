@@ -14,12 +14,19 @@ const typewriterItems = [
 ];
 
 const Hero = () => {
+  const [mounted, setMounted] = useState(false);
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [speed, setSpeed] = useState(150);
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+    
     const handleType = () => {
       const currentFullText = typewriterItems[index % typewriterItems.length];
       
@@ -42,14 +49,25 @@ const Hero = () => {
 
     const timer = setTimeout(handleType, speed);
     return () => clearTimeout(timer);
-  }, [displayText, isDeleting, index, speed]);
+  }, [displayText, isDeleting, index, speed, mounted]);
 
   return (
     <section id="home" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-white">
       {/* Background Decorative Elements */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-30">
+      <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-30 pointer-events-none">
         <div className="absolute top-1/4 left-10 w-96 h-96 bg-primary/5 rounded-full blur-[100px] animate-pulse"></div>
         <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-[#00d2ff1a] rounded-full blur-[100px] animate-pulse delay-700"></div>
+        {/* Abstract Shapes */}
+        <motion.div 
+          animate={{ rotate: 360, scale: [1, 1.1, 1] }} 
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          className="absolute top-10 right-[15%] w-64 h-64 border border-primary/5 rounded-[3rem] -z-10"
+        ></motion.div>
+        <motion.div 
+          animate={{ y: [0, 50, 0], x: [0, -30, 0] }} 
+          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute bottom-20 left-[10%] w-48 h-48 bg-accent/30 rounded-full blur-2xl -z-10"
+        ></motion.div>
       </div>
 
       <div className="container-custom relative z-10">
@@ -71,8 +89,17 @@ const Hero = () => {
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-8 leading-[1.05] text-foreground">
               Creative <br className="hidden md:block" />
-              <span className="text-gradient inline-block min-h-[1.2em]" suppressHydrationWarning>
-                {displayText}
+              <span className="text-gradient inline-block min-h-[1.2rem]">
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={displayText}
+                    initial={{ opacity: 0, y: 5 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.1 }}
+                  >
+                    {displayText}
+                  </motion.span>
+                </AnimatePresence>
                 <span className="animate-pulse border-r-4 border-primary ml-1"></span>
               </span>
             </h1>
