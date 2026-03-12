@@ -167,23 +167,6 @@ const Hero = () => {
             </div>
             
             {/* Floating Badges */}
-            <motion.div 
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -right-8 top-1/4 bg-white/95 backdrop-blur-xl p-6 rounded-3xl shadow-2xl border border-border hidden xl:flex items-center gap-5 z-20"
-            >
-              <div className="p-4 bg-primary/5 rounded-2xl text-primary font-bold text-2xl">⚡</div>
-              <div className="text-sm font-black leading-tight">Fast Execution<br/><span className="text-muted font-bold text-[10px] uppercase tracking-widest leading-none">High Performance</span></div>
-            </motion.div>
-
-            <motion.div 
-              animate={{ y: [0, 20, 0] }}
-              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              className="absolute -left-8 bottom-1/4 bg-white/95 backdrop-blur-xl p-6 rounded-3xl shadow-2xl border border-border hidden xl:flex items-center gap-5 z-20"
-            >
-              <div className="p-4 bg-primary/5 rounded-2xl text-primary font-bold text-2xl">🏗️</div>
-              <div className="text-sm font-black leading-tight">Scalable Build<br/><span className="text-muted font-bold text-[10px] uppercase tracking-widest leading-none">Clean Architecture</span></div>
-            </motion.div>
           </motion.div>
         </div>
       </div>
