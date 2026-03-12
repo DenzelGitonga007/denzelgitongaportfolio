@@ -11,7 +11,7 @@ const projects = [
   {
     title: "KAFU E-Admit Platform",
     category: "Fullstack",
-    image: "/My-Portfolio/assets/img/portfolio/kafu_eadmit_1.png",
+    image: "/denzelgitongaportfolio/assets/img/portfolio/kafu_eadmit_1.png",
     description: "Digital admission management system supporting online applications, document verification, and RBAC.",
     tags: ["Laravel", "React", "Inertia.js", "MySQL"],
     link: "https://e-admit.kafu-iihub.com/",
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Ayuuto Parking Management",
     category: "Fullstack",
-    image: "/My-Portfolio/assets/img/portfolio/ayuuto_parking_1.png",
+    image: "/denzelgitongaportfolio/assets/img/portfolio/ayuuto_parking_1.png",
     description: "Smart parking management platform with automated digital parking operations and payment processing.",
     tags: ["Laravel", "React", "TypeScript", "MySQL"],
     link: "https://parking.ayuutto.com",
@@ -29,7 +29,7 @@ const projects = [
   {
     title: "Hillary Ngweno Abstracts",
     category: "Web",
-    image: "/My-Portfolio/assets/img/portfolio/hllary_ngweno_home_1.png",
+    image: "/denzelgitongaportfolio/assets/img/portfolio/hllary_ngweno_home_1.png",
     description: "Digital archive and library management system for the Hillary Ngweno collection.",
     tags: ["Python", "Django", "Tailwind CSS"],
     link: "https://hngweno.kafu-iihub.com/",
@@ -38,7 +38,7 @@ const projects = [
   {
     title: "Clarion POS & Inventory",
     category: "Business",
-    image: "/My-Portfolio/assets/img/portfolio/point_of_sale_home_4.png",
+    image: "/denzelgitongaportfolio/assets/img/portfolio/point_of_sale_home_4.png",
     description: "Point-of-Sale and inventory management system for retail operations with transaction reporting.",
     tags: ["Python", "Django", "Bootstrap", "MySQL"],
     link: "#",
@@ -47,7 +47,7 @@ const projects = [
   {
     title: "KAFU IIHub Official Site",
     category: "Web",
-    image: "/My-Portfolio/assets/img/portfolio/kafu_iihub_1.png",
+    image: "/denzelgitongaportfolio/assets/img/portfolio/kafu_iihub_1.png",
     description: "Official digital platform for KAFU Innovation Hub to showcase programs and developer projects.",
     tags: ["TypeScript", "Next.js", "Tailwind CSS"],
     link: "https://kafu-iihub.com",
@@ -56,7 +56,7 @@ const projects = [
   {
     title: "Bhumi Order Management",
     category: "Business",
-    image: "/My-Portfolio/assets/img/portfolio/point_of_sale_admin_2.png",
+    image: "/denzelgitongaportfolio/assets/img/portfolio/point_of_sale_admin_2.png",
     description: "Business operations platform for managing product orders, stock, and operational workflows.",
     tags: ["Python", "Django", "Kotlin Integration"],
     link: "#",
@@ -65,7 +65,7 @@ const projects = [
   {
     title: "Ayuuto Pay Wallet",
     category: "Fintech",
-    image: "/My-Portfolio/assets/img/portfolio/ayuuto_pay.png",
+    image: "/denzelgitongaportfolio/assets/img/portfolio/ayuuto_pay.png",
     description: "Digital wallet infrastructure powering financial transactions with mobile money API integrations.",
     tags: ["Laravel", "Webhooks", "API Integration"],
     link: "https://pay.ayuutto.com",
