@@ -15,7 +15,7 @@ const Footer = () => {
             <a href="#home" className="flex items-center gap-4 group">
               <div className="relative w-12 h-12 rounded-2xl overflow-hidden shadow-md group-hover:rotate-[5deg] transition-all duration-500 border border-primary/10">
                 <img 
-                  src="/logo.png" 
+                  src="assets/img/logo.png" 
                   alt="Tech With Denzel" 
                   className="w-full h-full object-cover"
                 />
