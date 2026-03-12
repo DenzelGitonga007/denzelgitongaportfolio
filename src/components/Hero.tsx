@@ -157,7 +157,7 @@ const Hero = () => {
             <div className="relative z-10 rounded-[4rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(6,92,194,0.15)] border-[16px] border-white group">
               <div className="absolute inset-0 bg-primary/2 opacity-10 group-hover:opacity-0 transition-opacity duration-700"></div>
               <Image
-                src="/My-Portfolio/assets/img/profile/denzel_official.png"
+                src="/denzelgitongaportfolio/assets/img/profile/denzel_official.png"
                 alt="Denzel Gitonga"
                 width={800}
                 height={800}
