@@ -66,7 +66,7 @@ const Skills = () => {
                   <motion.span
                     key={skill}
                     whileHover={{ scale: 1.05, backgroundColor: "var(--primary)", color: "white" }}
-                    className="px-5 py-2 rounded-xl bg-secondary text-sm font-black text-muted-foreground transition-all cursor-default border border-transparent hover:shadow-lg hover:shadow-primary/20"
+                    className="px-5 py-2 rounded-xl bg-secondary text-sm font-black text-slate-700 transition-all cursor-default border border-transparent hover:shadow-lg hover:shadow-primary/20"
                   >
                     {skill}
                   </motion.span>

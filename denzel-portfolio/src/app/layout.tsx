@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "Tech With Denzel | Software Engineer & Automation Specialist",
   description: "Portfolio of Denzel Gitonga, a Full-Stack Software Engineer, AWS Certified Cloud Practitioner, and Automation Specialist specializing in scalable digital solutions.",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "denzel-portfolio\public\assets\img\favicon.ico",
+    apple: "denzel-portfolio\public\assets\img\favicon.ico",
   },
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body 
+      <body
         className={`${outfit.variable} font-outfit antialiased bg-background text-foreground`}
         suppressHydrationWarning
       >

@@ -154,7 +154,7 @@ const Portfolio = () => {
                 <div className="p-10 flex flex-col flex-grow">
                   <div className="text-[10px] font-black text-primary uppercase tracking-[0.3em] mb-4">{project.category}</div>
                   <h3 className="text-2xl font-black mb-4 text-foreground/90 group-hover:text-primary transition-colors">{project.title}</h3>
-                  <p className="text-muted-foreground text-base mb-10 flex-grow leading-relaxed font-bold opacity-80 group-hover:opacity-100 transition-opacity">{project.description}</p>
+                  <p className="text-slate-600 text-base mb-10 flex-grow leading-relaxed font-bold group-hover:text-slate-900 transition-colors">{project.description}</p>
                   <div className="flex flex-wrap gap-2.5">
                     {project.tags.map(tag => (
                       <span key={tag} className="text-[10px] px-3 py-1.5 rounded-xl bg-secondary text-foreground/60 font-black uppercase tracking-wider border border-border group-hover:border-primary/20 group-hover:bg-primary/5 group-hover:text-primary transition-all">

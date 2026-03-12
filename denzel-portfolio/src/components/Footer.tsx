@@ -12,13 +12,22 @@ const Footer = () => {
       <div className="container-custom">
         <div className="flex flex-col md:flex-row justify-between items-center gap-12 mb-16">
           <div className="flex flex-col items-center md:items-start gap-6">
-            <a href="#home" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center text-white shadow-lg group-hover:rotate-[10deg] transition-all duration-500">
-                <Sparkles size={24} />
+            <a href="#home" className="flex items-center gap-4 group">
+              <div className="relative w-12 h-12 rounded-2xl overflow-hidden shadow-md group-hover:rotate-[5deg] transition-all duration-500 border border-primary/10">
+                <img 
+                  src="/logo.png" 
+                  alt="Tech With Denzel" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <span className="text-2xl font-black tracking-tighter text-foreground">
-                DENZEL<span className="opacity-30">.G</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="text-xl font-black tracking-tighter text-foreground leading-none">
+                  Tech With <span className="text-primary">Denzel</span>
+                </span>
+                <span className="text-[8px] font-black uppercase tracking-[0.2em] text-muted-foreground mt-1">
+                  Innovate • Automate
+                </span>
+              </div>
             </a>
             <p className="text-muted-foreground font-bold max-w-sm text-center md:text-left leading-relaxed">
               Architecting scalable digital ecosystems and automation solutions with a focus on institutional excellence.
@@ -50,7 +59,7 @@ const Footer = () => {
             © {currentYear} Denzel Gitonga. All Rights Reserved.
           </p>
           <div className="flex items-center gap-3 text-sm font-black text-muted-foreground uppercase tracking-widest bg-secondary/30 px-6 py-2 rounded-full border border-border">
-            Built with <Heart size={14} className="text-primary fill-primary animate-pulse" /> using Next.js & Framer
+            Built with <Heart size={14} className="text-primary fill-primary animate-pulse" /> by Denzel Gitonga
           </div>
         </div>
       </div>

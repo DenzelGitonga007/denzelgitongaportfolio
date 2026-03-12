@@ -38,7 +38,7 @@ const SectionHeader = ({ title, subtitle, align = "center", className }: Section
         {title}
       </h2>
       {subtitle && (
-        <p className="text-xl md:text-2xl text-muted-foreground font-bold leading-relaxed opacity-80">
+        <p className="text-xl md:text-2xl text-slate-700 font-bold leading-relaxed">
           {subtitle}
         </p>
       )}

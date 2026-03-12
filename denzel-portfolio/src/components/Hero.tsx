@@ -71,13 +71,13 @@ const Hero = () => {
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-8 leading-[1.05] text-foreground">
               Creative <br className="hidden md:block" />
-              <span className="text-gradient inline-block min-h-[1.2em]">
+              <span className="text-gradient inline-block min-h-[1.2em]" suppressHydrationWarning>
                 {displayText}
                 <span className="animate-pulse border-r-4 border-primary ml-1"></span>
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-bold opacity-90">
+            <p className="text-xl md:text-2xl text-slate-700 mb-12 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-bold">
               I design and build powerful digital solutions that solve real problems. From sleek websites to automated business workflows, I blend full-stack expertise with cloud-ready architecture.
             </p>
             

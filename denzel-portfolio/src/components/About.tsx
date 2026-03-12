@@ -30,7 +30,7 @@ const About = () => {
                 With hands-on experience in <strong className="text-primary font-black">Python, Django, JavaScript, React, Node.js, Next.js, and cloud deployment on AWS</strong>, 
                 I transform complex ideas into clean, functional, and high-performing realities.
               </p>
-              <p className="opacity-80">
+              <p>
                 Recognized for bridging software engineering, cloud architecture, and business process automation to deliver practical solutions that improve operational efficiency. 
               </p>
             </div>

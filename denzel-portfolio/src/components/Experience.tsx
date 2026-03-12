@@ -97,7 +97,7 @@ const Experience = () => {
                   </div>
                 </div>
                 
-                <p className="text-xl text-muted-foreground mb-10 leading-relaxed font-bold opacity-80 group-hover:opacity-100 transition-opacity">
+                <p className="text-xl text-slate-700 mb-10 leading-relaxed font-bold group-hover:text-slate-900 transition-colors">
                   {exp.description}
                 </p>
                 
