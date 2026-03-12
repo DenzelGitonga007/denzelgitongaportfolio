@@ -121,7 +121,7 @@ const Portfolio = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                transition={{ duration: 0.4, delay: idx * 0.05 }}
                 className="bg-white rounded-[2.5rem] overflow-hidden shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)] border border-border group hover:shadow-[0_20px_60px_-15px_rgba(6,92,194,0.15)] transition-all duration-700 flex flex-col h-full"
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-secondary">

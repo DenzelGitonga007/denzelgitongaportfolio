@@ -54,7 +54,7 @@ const Skills = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
               className="bg-white p-12 rounded-[3rem] shadow-[0_10px_40px_-15px_rgba(0,0,0,0.03)] border border-border group hover:shadow-[0_25px_60px_-15px_rgba(6,92,194,0.1)] hover:-translate-y-2 transition-all duration-500"
             >
               <div className="w-20 h-20 rounded-3xl bg-primary/5 flex items-center justify-center mb-10 group-hover:bg-primary group-hover:text-white group-hover:rotate-[10deg] transition-all duration-700 shadow-sm">

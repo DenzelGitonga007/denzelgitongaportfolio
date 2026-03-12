@@ -14,7 +14,7 @@ const About = () => {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
             <SectionHeader
               title="A Deep Dive Into My Expertise"
@@ -57,7 +57,7 @@ const About = () => {
             initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="relative"
           >
             <div className="rounded-[4rem] overflow-hidden shadow-2xl border-[20px] border-secondary/30 group">

@@ -75,7 +75,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="flex-1 text-center lg:text-left"
           >
             <motion.div 
@@ -132,7 +132,7 @@ const Hero = () => {
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
+              transition={{ delay: 0.4 }}
               className="mt-20 flex flex-wrap items-center justify-center lg:justify-start gap-12 border-t border-border pt-10"
             >
               {[
@@ -151,7 +151,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: -2 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
             className="flex-1 relative"
           >
             <div className="relative z-10 rounded-[4rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(6,92,194,0.15)] border-[16px] border-white group">
