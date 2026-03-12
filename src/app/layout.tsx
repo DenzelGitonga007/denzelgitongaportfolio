@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "Denzel Gitonga Portfolio",
   description: "Portfolio of Denzel Gitonga, a Full-Stack Software Engineer, AWS Certified Cloud Practitioner, and Automation Specialist specializing in scalable digital solutions.",
   icons: {
-    icon: "/assets/img/favicon.ico",
-    apple: "/assets/img/favicon.ico",
+    icon: "/My-Portfolio/assets/img/favicon.ico",
+    apple: "/My-Portfolio/assets/img/favicon.ico",
   },
 };
 
