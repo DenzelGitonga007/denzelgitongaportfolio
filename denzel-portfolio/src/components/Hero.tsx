@@ -89,17 +89,8 @@ const Hero = () => {
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-8 leading-[1.05] text-foreground">
               Creative <br className="hidden md:block" />
-              <span className="text-gradient inline-block min-h-[1.2rem]">
-                <AnimatePresence mode="wait">
-                  <motion.span
-                    key={displayText}
-                    initial={{ opacity: 0, y: 5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.1 }}
-                  >
-                    {displayText}
-                  </motion.span>
-                </AnimatePresence>
+              <span className="text-gradient inline-block min-h-[1.2rem]" suppressHydrationWarning>
+                {displayText || "\u00A0"}
                 <span className="animate-pulse border-r-4 border-primary ml-1"></span>
               </span>
             </h1>
