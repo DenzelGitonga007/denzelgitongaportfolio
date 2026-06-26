@@ -45,7 +45,7 @@ const experiences = [
   {
     role: "Software Engineering Lecturer",
     company: "Finn Church Aid | eMobilis | PLP",
-    period: "2023 - 2025",
+    period: "2023 - 2026",
     location: "Nairobi, Kenya",
     description: "Trained and mentored students in full-stack web development and software engineering best practices.",
     achievements: [
