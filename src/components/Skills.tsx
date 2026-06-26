@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Code2, Server, Cloud, Cpu, Layout, Workflow } from "lucide-react";
+import { Code2, Server, Cloud, Cpu, Layout, Workflow, Brain } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
 const skillCategories = [
@@ -17,9 +17,14 @@ const skillCategories = [
     skills: ["Python (Django)", "PHP (Laravel)", "Node.js", "REST APIs", "SQL", "MongoDB"],
   },
   {
+    title: "AI & Intelligent Tools",
+    icon: <Brain className="text-primary" size={28} />,
+    skills: ["Microsoft Copilot", "ChatGPT / OpenAI", "Claude AI", "NVIDIA AI", "Prompt Engineering", "AI Workflow Automation", "GitHub Copilot"],
+  },
+  {
     title: "Business Automation",
     icon: <Workflow className="text-primary" size={28} />,
-    skills: ["Power Automate", "Power Apps", "Python Scripting", "Excel Automation", "Office 365"],
+    skills: ["Power Automate", "Power Apps", "Python Scripting", "Excel Automation", "Office 365", "MS Copilot Studio"],
   },
   {
     title: "Cloud & Infrastructure",

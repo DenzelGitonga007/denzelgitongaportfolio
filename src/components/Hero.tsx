@@ -8,6 +8,7 @@ import { TypewriterText } from "./TypewriterText";
 
 const typewriterItems = [
   "Full-Stack Software Engineer",
+  "AI Engineer & AI Fluency Certified",
   "Automation Specialist",
   "AWS Cloud Practitioner",
   "Technical Trainer & Lecturer",
@@ -57,7 +58,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-slate-700 mb-12 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-bold">
-              I design and build powerful digital solutions that solve real problems. From sleek websites to automated business workflows, I blend full-stack expertise with cloud-ready architecture.
+              I design and build powerful digital solutions that solve real problems. From sleek websites to automated business workflows, I blend full-stack expertise, AI engineering, and cloud-ready architecture.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
