@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #1e293b;
+  --accent: #e0e7ff;
+  --accent-foreground: #3730a3;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --border-color: #e2e8f0;
+  --muted: #334155;
+  --muted-foreground: #64748b;
+  --glass: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.6);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border-color);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --font-outfit: var(--font-outfit);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  * {
+    border-color: var(--border-color);
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply antialiased transition-colors duration-500 font-semibold text-slate-900;
+    position: relative;
+  }
+
+  /* Premium Grain Overlay */
+  body::after {
+    content: "";
+    position: fixed;
+    top: -150%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 9999;
+    animation: grain 8s steps(10) infinite;
+    mix-blend-mode: overlay;
+  }
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -5%) }
+  20% { transform:translate(-10%, 5%) }
+  30% { transform:translate(5%, -10%) }
+  40% { transform:translate(-5%, 15%) }
+  50% { transform:translate(-10%, 5%) }
+  60% { transform:translate(15%, 0) }
+  70% { transform:translate(0, 10%) }
+  80% { transform:translate(-15%, 0) }
+  90% { transform:translate(10%, 5%) }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-24 md:py-40;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-primary-foreground font-bold px-8 py-4 rounded-xl shadow-[0_10px_20px_-10px_rgba(37,99,235,0.6)] transition-all duration-300 hover:opacity-90 hover:shadow-[0_15px_25px_-10px_rgba(37,99,235,0.8)] hover:-translate-y-1 active:scale-95 bg-gradient-to-r from-blue-600 to-indigo-600;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:bg-primary/5 hover:shadow-[0_10px_20px_-10px_rgba(37,99,235,0.3)] hover:-translate-y-1 active:scale-95;
+  }
+  
+  .badge {
+    @apply px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest bg-blue-50 text-primary border border-blue-200 shadow-sm;
+  }
+
+  .premium-card {
+    @apply bg-white/70 backdrop-blur-2xl rounded-[2.5rem] border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(37,99,235,0.2)] hover:-translate-y-2;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #2563eb, #06b6d4, #8b5cf6, #2563eb);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-flow 6s linear infinite;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 5px;
+  border: 4px solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
