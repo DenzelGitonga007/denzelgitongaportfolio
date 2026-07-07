@@ -29,7 +29,7 @@ const skillCategories = [
   {
     title: "Cloud & Infrastructure",
     icon: <Cloud className="text-primary" size={28} />,
-    skills: ["AWS", "Linux Scripting", "GCP", "Firebase", "Docker", "Git", "Server Management", "Network Engineering"],
+    skills: ["AWS", "Linux Scripting", "GCP", "Firebase", "Docker", "Azure", "Git", "Server Management", "Network Engineering"],
   },
   {
     title: "Mobile Development",
