@@ -12,9 +12,9 @@ const skillCategories = [
     skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript", "Inertia.js"],
   },
   {
-    title: "Backend Architecture",
+    title: "Backend Engineer",
     icon: <Server className="text-primary" size={28} />,
-    skills: ["Python (Django)", "PHP (Laravel)", "Node.js", "REST APIs", "SQL", "MongoDB"],
+    skills: ["Python (Django)", "PHP (Laravel)", "Node.js", "REST APIs", "DevOps (CI/CD)", "SQL", "MongoDB", "Express JS", "PostgreSQL", "MySQL", "Sage DB", "Server Configurations"],
   },
   {
     title: "AI & Intelligent Tools",
@@ -29,12 +29,12 @@ const skillCategories = [
   {
     title: "Cloud & Infrastructure",
     icon: <Cloud className="text-primary" size={28} />,
-    skills: ["AWS", "Linux Scripting", "GCP", "Firebase", "Docker", "Git"],
+    skills: ["AWS", "Linux Scripting", "GCP", "Firebase", "Docker", "Git", "Server Management", "Network Engineering"],
   },
   {
     title: "Mobile Development",
     icon: <Cpu className="text-primary" size={28} />,
-    skills: ["Kotlin", "Jetpack Compose", "Android Studio", "Mobile UI Design"],
+    skills: ["Kotlin", "Jetpack Compose", "Android Studio", "Mobile UI Design", "App deployment", "PlayStore Console"],
   },
   {
     title: "Tools & Testing",

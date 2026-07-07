@@ -24,7 +24,7 @@ const About = () => {
             
             <div className="space-y-8 text-xl text-muted-foreground leading-relaxed font-medium">
               <p>
-              I am a results-driven <span className="text-foreground font-black">Full-Stack Web Developer</span>, AWS Cloud Practitioner, <span className="text-primary font-black">Microsoft AI Fluency Certified AI Engineer</span>, and Automation Specialist with a passion for creating impactful digital solutions. 
+              I am a results-driven <span className="text-foreground font-black">Full-Stack Software Engineer</span>, Digital Skills Trainer and Consultant, AWS Cloud Practitioner, <span className="text-primary font-black">Microsoft AI Fluency Certified AI Engineer</span>, and Automation Specialist with a passion for creating impactful digital solutions. 
               </p>
               <p>
                 With hands-on experience in <strong className="text-primary font-black">Python, Django, Php, Laravel JavaScript, React, Node.js, Next.js, and cloud deployment on AWS</strong>, 
