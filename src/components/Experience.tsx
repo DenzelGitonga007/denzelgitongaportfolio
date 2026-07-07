@@ -25,7 +25,7 @@ const experiences = [
     location: "Remote/Nairobi",
     description: "Contributed to smart parking management and digital wallet infrastructure.",
     achievements: [
-      "Worked on Ayuuto Parking architecture (Laravel + React + Inertia.js).",
+      "Worked on Ayuuto Parking architecture (Php, Laravel + React + Inertia.js).",
       "Engineered Ayuuto Pay wallet infrastructure supporting internal ecosystem payments.",
       "Integrated mobile money APIs and webhook-based payment confirmations.",
     ],

@@ -18,7 +18,7 @@ const About = () => {
           >
             <SectionHeader
               title="A Deep Dive Into My Expertise"
-              subtitle="Full-Stack Engineer, Automation Specialist & AWS Certified Practitioner."
+              subtitle="Full-Stack Software Engineer, Digital Skills Trainer and Consultant, Automation Specialist & AWS Certified Practitioner."
               align="left"
             />
             
@@ -27,7 +27,7 @@ const About = () => {
               I am a results-driven <span className="text-foreground font-black">Full-Stack Web Developer</span>, AWS Cloud Practitioner, <span className="text-primary font-black">Microsoft AI Fluency Certified AI Engineer</span>, and Automation Specialist with a passion for creating impactful digital solutions. 
               </p>
               <p>
-                With hands-on experience in <strong className="text-primary font-black">Python, Django, JavaScript, React, Node.js, Next.js, and cloud deployment on AWS</strong>, 
+                With hands-on experience in <strong className="text-primary font-black">Python, Django, Php, Laravel JavaScript, React, Node.js, Next.js, and cloud deployment on AWS</strong>, 
                 I transform complex ideas into clean, functional, and high-performing realities.
               </p>
               <p>
