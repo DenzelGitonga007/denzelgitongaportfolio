@@ -9,7 +9,7 @@ const skillCategories = [
   {
     title: "Frontend Development",
     icon: <Layout className="text-primary" size={28} />,
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript", "Inertia.js"],
+    skills: ["UI/UX", "Prototyping", "Web Design", "Mobile Design", "React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript", "Inertia.js", "Figma", "Canva"],
   },
   {
     title: "Backend Engineer",
